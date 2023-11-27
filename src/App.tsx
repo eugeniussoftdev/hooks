@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Input } from "./components/Input";
 import { RANDOM_USER_URL } from "./constants/api";
 import logo from "./logo.svg";
 
@@ -20,7 +21,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div>
+          <Input />
+        </div>
         <div>
           {value}
           <button onClick={() => setStorageValue("math", Math.random())}>
