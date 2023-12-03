@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Copycliboard } from "./components/CopyClipboard/Copycliboard";
 import { Input } from "./components/Input";
 import { RANDOM_USER_URL } from "./constants/api";
 import logo from "./logo.svg";
@@ -21,6 +22,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <Copycliboard />
         <div>
           <Input />
         </div>
